@@ -1,3 +1,5 @@
+Copyright (C) 2018 Xiaomi-SDM660 Project
+
 The MI 6X (codenamed _"wayne"_) is a mid-range phone from Xiaomi.
 
 Xiaomi MI 6X was announced and released in April 2018.
