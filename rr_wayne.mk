@@ -21,15 +21,8 @@
 # definition file).
 #
 
-#AOSP SU
-WITH_SU := false
-
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/wayne/device.mk)
-
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/rr/config/common_full_phone.mk)
@@ -37,18 +30,13 @@ $(call inherit-product, vendor/rr/config/common_full_phone.mk)
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-TARGET_VENDOR_PRODUCT_NAME := wayne
-
 # Build Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	PRIVATE_BUILD_DESC="wayne-user 9 PKQ1.180904.001 V10.3.4.0.PDCCNXM release-keys"
-
-BUILD_FINGERPRINT="xiaomi/wayne/wayne:9/PKQ1.180904.001/V10.3.4.0.PDCCNXM:user/release-keys"
+    PRIVATE_BUILD_DESC="wayne-user 9 PKQ1.180904.001 V10.3.4.0.PDCCNXM release-keys"
 
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_PLATFORM := SDM660
 PRODUCT_NAME := rr_wayne
 PRODUCT_DEVICE := wayne
 PRODUCT_MODEL := MI 6X

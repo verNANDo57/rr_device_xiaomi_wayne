@@ -26,22 +26,32 @@ include device/xiaomi/sdm660-common/BoardConfigCommon.mk
 # Device Path
 DEVICE_PATH := device/xiaomi/wayne
 
+# Crypto
+TARGET_HW_DISK_ENCRYPTION := true
+
 # DT2W
-TARGET_TAP_TO_WAKE_NODE := "/proc/nvt_wake_gesture"
+TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
-TARGET_KERNEL_CONFIG := mystic-wayne_defconfig
+TARGET_KERNEL_CONFIG := wayne_defconfig
+
 TW_USE_TOOLBOX := true
 
 # Manifest
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
+#Face unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 # Platform
 BOARD_VENDOR_PLATFORM := xiaomi-sdm660
 
-# Vendor Security patch level
-VENDOR_SECURITY_PATCH := 2020-07-05
+#64Bits
+TARGET_SUPPORTS_64_BIT_APPS := true
+
+# Security patch level
+VENDOR_SECURITY_PATCH := 2020-08-05
 
 # WLAN MAC
 WLAN_MAC_SYMLINK := true

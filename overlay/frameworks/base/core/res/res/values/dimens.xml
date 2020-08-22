@@ -1,5 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- #
 #
-# Copyright (C) 2018 The Xiaomi-SDM660 Project
+# Copyright (C) 2019 The Xiaomi-SDM660 Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,12 +22,9 @@
 # included in a build is to use PRODUCT_PACKAGES in a product
 # definition file).
 #
+-->
 
-# inherit MI 6X Resurrection Remix device config
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/rr_wayne.mk
-
-COMMON_LUNCH_CHOICES := \
-    rr_wayne-eng \
-    rr_wayne-userdebug \
-    rr_wayne-user
+<resources>
+    <!-- Default radius of the software rounded corners. -->
+    <dimen name="rounded_corner_radius">33px</dimen>
+</resources>
