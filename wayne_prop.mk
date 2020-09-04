@@ -21,10 +21,19 @@
 # definition file).
 #
 
+# Radio
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.iwlan.enable=true \
+    persist.vendor.radio.data_con_rprt=1
+
 # Adaptive Display
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.qcom.ad=1 \
     ro.qcom.ad.sensortype=2
+
+# Dual SIM
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.radio.multisim.config=dsds
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -81,22 +90,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hist.brightness.threshold=5 \
     vidc.enc.dcvs.extra-buff-count=2 \
 
-# Dual SIM
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.radio.multisim.config=dsds
-
 # DPI
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.lcd_density=480
-
-# Radio
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.iwlan.enable=true \
-    persist.vendor.radio.data_con_rprt=1
-
-# Maintainer info
-PRODUCT_PROPERTY_OVERRIDES += \
-    org.evolution.build_maintainer=OdSazib \
-    org.evolution.build_support_url=https://t.me/EvolutionXJasmine_Sprout \
-    org.evolution.build_donate_url=https://t.me/EvolutionXJasmine_Sprout
-    

@@ -21,37 +21,38 @@
 # definition file).
 #
 
-include device/xiaomi/sdm660-common/BoardConfigCommon.mk
+# EAS_POWERHINT_VARIANT
+EAS_POWERHINT_VARIANT := sdm660
+
+# Inherit the fusion-common definitions
+$(call inherit-product, device/xiaomi/wayne-common/wayne_common.mk)
 
 # Device Path
-DEVICE_PATH := device/xiaomi/wayne
+WAYNE_PATH := device/xiaomi/wayne
 
-# Crypto
-TARGET_HW_DISK_ENCRYPTION := true
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2160
+TARGET_SCREEN_WIDTH := 1080
 
-# DT2W
-TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
+# Device properties
+$(call inherit-product, $(WAYNE_PATH)/wayne_prop.mk)
 
-# Kernel
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
-TARGET_KERNEL_CONFIG := wayne_defconfig
+# Impositions
+DEVICE_PACKAGE_OVERLAYS += \
+    $(WAYNE_PATH)/overlay-device-specific\
+    $(WAYNE_PATH)/overlay-RR-specific
 
-TW_USE_TOOLBOX := true
+# Ramdisk
+PRODUCT_PACKAGES += \
+    init.device.rc
 
-# Manifest
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+# Screen density
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
-#Face unlock
-TARGET_FACE_UNLOCK_SUPPORTED := true
+# Soong
+PRODUCT_SOONG_NAMESPACES += \
+    $(WAYNE_PATH)
 
-# Platform
-BOARD_VENDOR_PLATFORM := xiaomi-sdm660
-
-#64Bits
-TARGET_SUPPORTS_64_BIT_APPS := true
-
-# Security patch level
-VENDOR_SECURITY_PATCH := 2020-08-05
-
-# WLAN MAC
-WLAN_MAC_SYMLINK := true
+# Vendor files
+$(call inherit-product, vendor/xiaomi/wayne/wayne-vendor.mk)

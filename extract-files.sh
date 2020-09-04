@@ -28,13 +28,13 @@ if [[ ! -d "$DEVICE_DIR" ]]; then DEVICE_DIR="$PWD"; fi
 export DEVICE_DIR
 
 export IS_COMMON=true
-export GUARDED_DEVICES="jasmine_sprout wayne"
+export GUARDED_DEVICES="wayne"
 
 # Required!
 export DEVICE=wayne-common
 export DEVICE_BRINGUP_YEAR=2018
 
-DEVICE_COMMON=sdm660-common
+DEVICE_COMMON=wayne-common
 VENDOR=xiaomi
 
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"

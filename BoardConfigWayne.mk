@@ -21,25 +21,22 @@
 # definition file).
 #
 
-# Inherit device configuration
-$(call inherit-product, device/xiaomi/wayne/wayne_device.mk)
+include device/xiaomi/wayne-common/BoardConfigWayneCommon.mk
 
-# Inherit from our custom product configuration
-$(call inherit-product, vendor/rr/config/common_full_phone.mk)
+# Device Path
+WAYNE_PATH := device/xiaomi/wayne
 
-# Define first api level
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
+# Kernel
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
+TARGET_KERNEL_CONFIG := wayne_defconfig
 
-# Build Fingerprint
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="wayne-user 9 PKQ1.180904.001 V10.3.4.0.PDCCNXM release-keys"
+TW_USE_TOOLBOX := true
 
-#Build FP to be picked by both system and vendor
-BUILD_FINGERPRINT := "xiaomi/wayne/wayne:9/PKQ1.180904.001/V10.3.4.0.PDCCNXM:user/release-keys"
+#Face unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
-# Device identifier
-PRODUCT_BRAND := Xiaomi
-PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := rr_wayne
-PRODUCT_DEVICE := wayne
-PRODUCT_MODEL := MI 6X
+# Platform
+BOARD_VENDOR_PLATFORM := xiaomi-sdm660
+
+# Security patch level
+VENDOR_SECURITY_PATCH := 2020-08-05
