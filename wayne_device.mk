@@ -42,10 +42,6 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(WAYNE_PATH)/overlay-device-specific\
     $(WAYNE_PATH)/overlay-RR-specific
 
-# Ramdisk
-PRODUCT_PACKAGES += \
-    init.device.rc
-
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
