@@ -21,6 +21,9 @@
 # definition file).
 #
 
+# Buildtype
+RR_BUILDTYPE=Official
+
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/wayne/wayne_device.mk)
 
