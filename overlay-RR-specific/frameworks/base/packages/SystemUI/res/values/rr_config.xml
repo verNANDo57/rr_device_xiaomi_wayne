@@ -35,5 +35,8 @@
      
     <!-- Allow devices to enforce the H265 encoder for screen recordings -->
     <bool name="config_useNewScreenRecEncoder">true</bool>
+     
+    <!-- Device supports internal audio recording -->
+    <bool name="config_recorderInternalAudio">true</bool>
 
 </resources>
