@@ -32,7 +32,7 @@
     <bool name="config_allowNotificationIconTextTinting">true</bool>
     <!-- True if the notification's dynamic app icon and text tint should be optimised for dark
          backgrounds -->
-    <bool name="config_useDarkBgNotificationIconTextTinting">false</bool>
+    <bool name="config_useDarkBgNotificationIconTextTinting">true</bool>
 
     <!-- Defines the sysfs attribute path used by pocket bridge
         to communicate pocket state to the pocket judge kernel driver. -->
