@@ -21,7 +21,7 @@
 # definition file).
 #
 
-include device/xiaomi/wayne-common/BoardConfigWayneCommon.mk
+include device/xiaomi/wayne-common/BoardConfigCommon.mk
 
 # Device Path
 WAYNE_PATH := device/xiaomi/wayne
@@ -39,4 +39,4 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 BOARD_VENDOR_PLATFORM := xiaomi-sdm660
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2020-08-05
+VENDOR_SECURITY_PATCH := 2020-09-05
