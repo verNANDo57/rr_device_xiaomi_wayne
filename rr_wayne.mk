@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2018 The Xiaomi-SDM660 Project
+# Copyright (C) 2020 The Resurrection Remix Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,6 +24,9 @@
 
 # Buildtype
 RR_BUILDTYPE=Official
+
+#Sign with private key
+PRODUCT_DEFAULT_DEV_CERTIFICATE := device/xiaomi/wayne/keys/releasekey
 
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/wayne/wayne_device.mk)

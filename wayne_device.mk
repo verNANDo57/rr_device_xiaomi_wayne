@@ -39,7 +39,7 @@ $(call inherit-product, $(WAYNE_PATH)/wayne_prop.mk)
 
 # Impositions
 DEVICE_PACKAGE_OVERLAYS += \
-    $(WAYNE_PATH)/overlay-device-specific\
+    $(WAYNE_PATH)/overlay-device-specific \
     $(WAYNE_PATH)/overlay-RR-specific
 
 # Screen density
