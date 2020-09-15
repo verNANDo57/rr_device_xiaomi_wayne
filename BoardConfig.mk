@@ -30,6 +30,15 @@ WAYNE_PATH := device/xiaomi/wayne
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
 TARGET_KERNEL_CONFIG := wayne_defconfig
 
+# Crypto
+TARGET_HW_DISK_ENCRYPTION := true
+
+# DT2W
+TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
+
+# Manifest
+DEVICE_MANIFEST_FILE += $(WAYNE_PATH)/manifest.xml
+
 TW_USE_TOOLBOX := true
 
 #Face unlock

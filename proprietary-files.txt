@@ -1,0 +1,2 @@
+# Camera - from wayne
+vendor/etc/MIUI_DualCamera_watermark.png
