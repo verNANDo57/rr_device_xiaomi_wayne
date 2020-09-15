@@ -20,7 +20,7 @@
     <!-- Whether to use the mask for the quicksettings icons-->
     <bool name="config_useMaskForQs">true</bool>
 
-    <integer name="quick_settings_num_columns_land">6</integer>
+    <integer name="quick_settings_num_columns_land">7</integer>
 
     <!-- Burn in protection -->
     <bool name="config_statusBarBurnInProtection">false</bool> 
