@@ -43,7 +43,7 @@
     <bool name="config_recorderInternalAudio">true</bool>
      
     <!-- FPSInfoService FPS node file path -->
-    <string name="config_fpsInfoSysNode" translatable="false">/sys/devices/virtual/graphics/fb0/measured_fps</string>
+    <string name="config_fpsInfoSysNode" translatable="false"></string>
 
     <!-- Navbar -->
     <string name="config_navBarLayoutHandleArrows" translatable="false">back[1.7WC];home_handle;ime_switcher[1.7WC]</string>
