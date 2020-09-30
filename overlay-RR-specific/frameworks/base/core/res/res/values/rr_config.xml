@@ -76,7 +76,7 @@
     <integer name="config_screenBrightnessPulse">-1</integer>
 
     <!-- SBC Dual Channel (SBC HD Audio) -->
-    <bool name="config_enableSBCDualChannelAudio">false</bool>
+    <bool name="config_enableSBCDualChannelAudio">true</bool>
 
     <!-- Default state for LiveDisplay -->
     <bool name="config_liveDisplayAvailable">true</bool>
