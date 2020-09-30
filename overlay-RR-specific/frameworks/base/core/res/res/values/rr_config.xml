@@ -83,6 +83,9 @@
 	
     <!-- Whether device supports internal audio recording -->
     <bool name="config_hasInternalAudioRecordingSupport">true</bool>
+	
+    <!-- Whether the device has a popup camera -->
+    <bool name="config_hasPopupCamera">false</bool>
     
     <!-- Any package that has one of the package names defined below will be prevented
          from using specific sensors in order to stop battery drain -->
