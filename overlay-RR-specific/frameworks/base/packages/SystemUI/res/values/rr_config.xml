@@ -26,6 +26,12 @@
     <bool name="config_statusBarBurnInProtection">false</bool> 
 
     <integer name="config_maxVisibleStatusIconContainer">6</integer>
+     
+    <!-- Enable face auth only when swiping security view -->
+    <bool name="config_faceAuthOnlyOnSecurityView">false</bool>
+
+    <!-- Whether to disable assist hint on lockscreen -->
+    <bool name="config_disableAssistHintOnLockscreen">false</bool>
   
     <!-- The CPU temperature sensor path, defaults to empty -->
     <string name="config_cpuTempSensor" translatable="false">/sys/class/thermal/thermal_zone0/temp</string>
