@@ -40,7 +40,7 @@
 
     <!-- Enable face auth when swiping security view  
 	  for popup cameras-->
-    <bool name="config_faceAuthOnSecurityView">true</bool>
+    <bool name="config_faceAuthOnSecurityView">false</bool>
 
 
     <!-- Whether device has physical tri state switch -->
