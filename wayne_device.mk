@@ -88,6 +88,9 @@ PRODUCT_CHARACTERISTICS := nosdcard
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
     android.hardware.vibrator@1.0-service
+    
+# RR Wallpapers (optional)
+BUILD_RR_WALLPAPERS:= true
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
